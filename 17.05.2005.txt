@@ -1,0 +1,84 @@
+show databases;
+use vit;
+
+create table cse (
+id int,
+sname varchar(30),
+mark int,
+result varchar(10)
+);
+
+create table ece (
+id int,
+sname varchar(30),
+mark int,
+result varchar(10)
+);
+
+create table mech (
+id int,
+sname varchar(30),
+mark int,
+result varchar(10)
+);
+
+select * from cse;
+select * from ece;
+select * from mech;
+
+insert into cse values (101,'Rahul',70,'Pass');
+insert into cse values (102,'Rohan',82,'Pass');
+insert into cse values (103,'Abi',50,'Pass');
+insert into cse values (104,'Raj',47,'Fail');
+insert into cse values (105,'Shyam',38,'Fail');
+insert into cse values (106,'Ram',66,'Pass');
+insert into cse values (107,'Avinash',98,'Pass');
+insert into cse values (108,'Sourav',84,'Pass');
+insert into cse values (109,'Krishna',82,'Pass');
+insert into cse values (110,'Gauri',72,'Pass');
+
+insert into ece values (201,'Nithya',99,'Pass');
+insert into ece values (202,'Priya',95,'Pass');
+insert into ece values (203,'Sarvesh',28,'Fail');
+insert into ece values (204,'Mohan',62,'Pass');
+insert into ece values (205,'Kavin',88,'Pass');
+insert into ece values (206,'Joseph',77,'Pass');
+insert into ece values (207,'Lavanya',45,'Fail');
+insert into ece values (208,'Sanjana',54,'Pass');
+insert into ece values (209,'Rajesh',71,'Pass');
+insert into ece values (210,'Maya',64,'Pass');
+
+insert into mech values (301,'Hari',94,'Pass');
+insert into mech values (302,'Akash',87,'Pass');
+insert into mech values (303,'Ravi',58,'Pass');
+insert into mech values (304,'Vinay',64,'Pass');
+insert into mech values (305,'Tharun',99,'Pass');
+insert into mech values (306,'David',22,'Fail');
+insert into mech values (307,'Gautham',55,'Pass');
+insert into mech values (308,'Karan',48,'Fail');
+insert into mech values (309,'Jay',86,'Pass');
+insert into mech values (310,'Rishi',90,'Pass');
+
+select * from cse;
+
+desc cse;
+
+alter table cse add (
+address varchar(100),
+ph_no varchar(10)
+);
+
+desc cse;
+
+alter table cse add(
+country varchar(50) default 'India'
+);
+
+select * from cse;
+
+insert into cse values (111,'Frank',88,'Pass','Washington',874635456,'USA');
+
+select * from cse;
+
+update cse set mark = 99 where id = 102;
+ 
