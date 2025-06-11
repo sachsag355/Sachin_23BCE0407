@@ -1,0 +1,33 @@
+package connection;
+
+import org.bson.Document;
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoClients;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+import static com.mongodb.client.model.Aggregates.*;
+import static com.mongodb.client.model.Accumulators.*;
+import static com.mongodb.client.model.Sorts.*;
+import java.util.Arrays;
+
+public class MongoDBConnection {
+    public static void main(String[] args) {
+        try (MongoClient mongo = MongoClients.create("mongodb://localhost:27017")) {
+            MongoDatabase db = mongo.getDatabase("vit");
+            MongoCollection<Document> sales = db.getCollection("sales");
+            
+            sales.aggregate(Arrays.asList(
+                group("$item", 
+                    max("maxPrice", "$price"),
+                    addToSet("sizes", "$size")
+                ),
+                sort(descending("maxPrice"))
+            )).forEach((Document doc) -> {
+                System.out.printf("%-10s: $%2d (Sizes: %s)%n",
+                    doc.getString("_id"),
+                    doc.getInteger("maxPrice"),
+                    doc.getList("sizes", String.class));
+            });
+        }
+    }
+}
