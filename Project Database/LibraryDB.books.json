@@ -1,0 +1,102 @@
+[{
+  "_id": {
+    "$oid": "68524e221a6d23fc747294be"
+  },
+  "title": "The Great Gatsby",
+  "author": "F. Scott Fitzgerald",
+  "isbn": "978-0743273565",
+  "publishedDate": {
+    "$date": {
+      "$numberLong": "-1411516800000"
+    }
+  },
+  "genre": "Classic, Fiction",
+  "copies": 5,
+  "availableCopies": 4
+},
+{
+  "_id": {
+    "$oid": "68524e221a6d23fc747294bf"
+  },
+  "title": "1984",
+  "author": "George Orwell",
+  "isbn": "978-0451524935",
+  "publishedDate": {
+    "$date": {
+      "$numberLong": "-649036800000"
+    }
+  },
+  "genre": "Dystopian, Science Fiction",
+  "copies": 3,
+  "availableCopies": 2
+},
+{
+  "_id": {
+    "$oid": "68524e221a6d23fc747294c1"
+  },
+  "title": "The Hobbit",
+  "author": "J.R.R. Tolkien",
+  "isbn": "978-0345339683",
+  "publishedDate": {
+    "$date": {
+      "$numberLong": "-1018656000000"
+    }
+  },
+  "genre": "Fantasy",
+  "copies": 6,
+  "availableCopies": 5
+},
+{
+  "_id": {
+    "$oid": "68524e221a6d23fc747294c2"
+  },
+  "title": "Pride and Prejudice",
+  "author": "Jane Austen",
+  "isbn": "978-0141439518",
+  "publishedDate": {
+    "$date": {
+      "$numberLong": "-4952102400000"
+    }
+  },
+  "genre": "Romance, Classic",
+  "copies": 2,
+  "availableCopies": 2
+},
+{
+  "_id": {
+    "$oid": "68524e221a6d23fc747294c3"
+  },
+  "title": "Dune",
+  "author": "Frank Herbert",
+  "isbn": "978-0441172719",
+  "publishedDate": {
+    "$date": {
+      "$numberLong": "-139449600000"
+    }
+  },
+  "genre": "Science Fiction",
+  "copies": 3,
+  "availableCopies": 3
+},
+{
+  "_id": {
+    "$oid": "68524e221a6d23fc747294c4"
+  },
+  "title": "The Catcher in the Rye",
+  "author": "J.D. Salinger",
+  "isbn": "978-0316769174",
+  "publishedDate": {
+    "$date": {
+      "$numberLong": "-582681600000"
+    }
+  },
+  "genre": "Coming-of-Age, Fiction",
+  "copies": 4,
+  "availableCopies": 4
+},
+{
+  "_id": {
+    "$oid": "68525cbec6e361a0c201f5a3"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,89 @@
+[{
+  "_id": {
+    "$oid": "68524e721a6d23fc747294c5"
+  },
+  "name": "Admin Library",
+  "email": "admin@library.com",
+  "password": "$2b$10$a2OhWTfaFBoV/c1awCkXt.mJJst/MtFIGqucjQsbFSTkBz4fnJEr6",
+  "role": "admin",
+  "borrowedBooks": []
+},
+{
+  "_id": {
+    "$oid": "68524e721a6d23fc747294c6"
+  },
+  "name": "Emily Student",
+  "email": "emily@library.com",
+  "password": "$2b$10$oNVOULgQdVLsHnKiDnYvk.1X1kcW3YecwXjd.QnyOKrc.XerHpuQG",
+  "role": "member",
+  "borrowedBooks": [
+    {
+      "$oid": "68524e221a6d23fc747294be"
+    },
+    {
+      "$oid": "68524e221a6d23fc747294bf"
+    }
+  ],
+  "__v": 8,
+  "updatedAt": {
+    "$date": "2025-06-18T06:24:46.392Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68524e721a6d23fc747294c7"
+  },
+  "name": "John Student",
+  "email": "john@library.com",
+  "password": "$2b$10$Ca9M3f6xK0cBuo3flvsyI.azD9t4g385M7XiZhiVt2JzpF8FDEpzy",
+  "role": "member",
+  "borrowedBooks": [
+    {
+      "$oid": "68524e221a6d23fc747294c1"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "68524e721a6d23fc747294c8"
+  },
+  "name": "Jane Member",
+  "email": "jane@library.com",
+  "password": "$2b$10$jbc6iwuEyNy1pbgB0DBVG.p/csKEKk6pxuvJYekAn4mnRXInX8wji",
+  "role": "member",
+  "borrowedBooks": []
+},
+{
+  "_id": {
+    "$oid": "68525a79c6e361a0c201f584"
+  },
+  "email": "sach123@gmail.com",
+  "password": "123456",
+  "name": "S. Sachin Sagar",
+  "role": "member",
+  "borrowedBooks": [],
+  "createdAt": {
+    "$date": "2025-06-18T06:19:37.896Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-18T06:19:37.896Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68525a9cc6e361a0c201f588"
+  },
+  "email": "sach@gmail.com",
+  "password": "123456",
+  "name": "Sachin",
+  "role": "member",
+  "borrowedBooks": [],
+  "createdAt": {
+    "$date": "2025-06-18T06:20:12.013Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-18T06:20:12.013Z"
+  },
+  "__v": 0
+}]
